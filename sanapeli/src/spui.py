@@ -1,8 +1,10 @@
 import kysymykset as ksms
-import tkinter,random
+import tkinter,random,webbrowser
 from functools import partial
 def pohja():
 	return tkinter.Tk()
+def callback():
+	webbrowser.open_new("https://www.paypal.com/paypalme/Siiha")
 def seuraava():
 	base = pohja()
 	viesti = tkinter.Label(base,text="Valitse haluamasi kysymys tyyppi.")
