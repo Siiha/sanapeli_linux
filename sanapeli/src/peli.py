@@ -1,9 +1,9 @@
 import random,tkinter,sys,os,getpass,spui
 os.chdir('/home/'+getpass.getuser()+'/sanapeli/src')
 base = spui.pohja()
-base.geometry("400x20")
+base.geometry("800x600")
 base.title("Sanapeli")
-seuraava = tkinter.Button(base, text="Seuraava",command=spui.seuraava)
+seuraava = tkinter.Button(base, text="Peliin",command=spui.seuraava)
 tippi = tkinter.Button(text="Tippi(paypall)",command=spui.callback)
 seuraava.pack(side="right",anchor="nw")
 tippi.pack(side="left", anchor="nw")
