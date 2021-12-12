@@ -6,3 +6,5 @@ Kysyy sanaa joka täyttää pituus vaatimuksen.
 Kysyy tietyllä kirjaimella alkavan tai loppuvan sana.
 ## Asennus
 Pura zip pakeketti omaan kotihakemistoosi */home/käyttäjä/*
+## Ajo
+Kirjoita komentoriviin komento *python sanapeli/src/peli.py*
