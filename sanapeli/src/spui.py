@@ -4,6 +4,7 @@ from functools import partial
 pisteet=[]
 color1 = "#AADAFF"
 color2 = "#AADDFF"
+p = False
 def kehys():
 	return tkinter.Frame(bg=color1)
 def pohja():
@@ -21,6 +22,7 @@ def seuraava():
 	pituus1.pack()
 	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2)
 	tilanne.pack()
+	p = True
 def tarkistus(x,y):
 	f = kehys()
 	f.pack()
