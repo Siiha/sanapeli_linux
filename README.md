@@ -6,6 +6,8 @@ Kysyy sanaa joka täyttää pituus vaatimuksen.
 Kysyy tietyllä kirjaimella alkavan tai loppuvan sana.
 ### Alku tai loppu kirjain ja pituus
 Yhdistää aiemmat kysymykset.
+### Sisältää
+Sisältää tietyn kirjainyhdistelmän.
 ## Pelaaminen
 ### säännöt 
 Sanan voi käyttää vain kerran pelikerasssa.
