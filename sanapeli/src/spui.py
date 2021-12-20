@@ -2,6 +2,7 @@ import kysymykset as ksms
 import tkinter,random,webbrowser
 from functools import partial
 pisteet=[]
+sanat = []
 color1 = "#AADAFF"
 color2 = "#AADDFF"
 p = False
@@ -31,13 +32,15 @@ def tarkistus(x,y):
 	x = x.get()
 	sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
 	sulje.pack()
-	if x in y[0]:
+	if x in y[0] and x not in sanat:
 		v = True
 		viesti = tkinter.Label(f,text=v,bg=color2)
+		sanat.append(x)
 	else:
 		v = False
 		viesti = tkinter.Label(f,text=v,bg=color2)
 	pisteet.append(v)
+	
 	viesti.pack()
 def eka_vika():
 	f = kehys()
@@ -47,10 +50,10 @@ def eka_vika():
 	viesti.pack()
 	syote = tkinter.Entry(f)
 	syote.pack()
-	valmis=tkinter.Button(f,text="valmis",command=partial(tarkistus,syote,k1),bg=color2)
-	sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
+	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k1),f.destroy()],bg=color2)
+	#sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
 	valmis.pack()
-	sulje.pack()
+	#sulje.pack()
 	
 def pituus():
 	f = kehys()
@@ -60,10 +63,10 @@ def pituus():
 	viesti.pack()
 	syote = tkinter.Entry(f,bg=color2)
 	syote.pack()
-	valmis=tkinter.Button(f,text="valmis",command=partial(tarkistus,syote,k1),bg=color2)
+	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k1),f.destroy()],bg=color2)
 	valmis.pack()
-	sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
-	sulje.pack()
+	#sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
+	#sulje.pack()
 def eka_vika_pituus():
 	f = kehys()
 	f.pack()
@@ -75,10 +78,10 @@ def eka_vika_pituus():
 	viesti.pack()
 	syote = tkinter.Entry(f,bg=color2)
 	syote.pack()
-	valmis=tkinter.Button(f,text="valmis",command=partial(tarkistus,syote,k3),bg=color2)
+	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k3),f.destroy()],bg=color2)
 	valmis.pack()
-	sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
-	sulje.pack()
+	#sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
+	#sulje.pack()
 def pisteetf():
 	f = kehys()
 	f.pack()
