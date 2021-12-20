@@ -6,6 +6,9 @@ Kysyy sanaa joka täyttää pituus vaatimuksen.
 Kysyy tietyllä kirjaimella alkavan tai loppuvan sana.
 ### Alku tai loppu kirjain ja pituus
 Yhdistää aiemmat kysymykset.
+## Pelaaminen
+### säännöt 
+Sanan voi käyttää vain kerran pelikerasssa.
 ## Asennus
 Pura zip pakeketti omaan kotihakemistoosi */home/käyttäjä/*
 ## Ajo
