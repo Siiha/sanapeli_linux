@@ -3,7 +3,7 @@ import tkinter,random,webbrowser
 from functools import partial
 pisteet=[]
 sanat = []
-color1 = "#AADAFF"
+color1 = "#AADFFF"
 color2 = "#AADDFF"
 p = False
 def kehys():
@@ -23,6 +23,8 @@ def seuraava():
 	pituus1.pack()
 	EkaVikaPituus=tkinter.Button(f,text="Tietyn pituinen sana sekä alku- tai loppukirjain",command=eka_vika_pituus,bg=color2)
 	EkaVikaPituus.pack()
+	Sisaltyy=tkinter.Button(f,text="Sisältää tietyn kirjain yhdistelmän",command=sisaltyy,bg=color2)
+	Sisaltyy.pack()
 	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2)
 	tilanne.pack()
 	p = True
@@ -82,6 +84,16 @@ def eka_vika_pituus():
 	valmis.pack()
 	#sulje=tkinter.Button(f,text="Sulje osio" , command=f.destroy,bg=color2)
 	#sulje.pack()
+def sisaltyy():
+	f = kehys()
+	f.pack()
+	k1 = ksms.sisaltaa(ksms.yh[random.randint(0,len(ksms.yh))])
+	viesti = tkinter.Label(f,text=k1[1],bg=color2)
+	viesti.pack()
+	syote = tkinter.Entry(f,bg=color2)
+	syote.pack()
+	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k1),f.destroy()],bg=color2)
+	valmis.pack()
 def pisteetf():
 	f = kehys()
 	f.pack()
