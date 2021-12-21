@@ -5,6 +5,8 @@ pisteet=[]
 sanat = []
 color1 = "#AADFFF"
 color2 = "#AADDFF"
+color3 = "#AAFBFF"
+w = 48
 p = False
 def kehys():
 	return tkinter.Frame(bg=color1)
@@ -17,17 +19,17 @@ def seuraava():
 	f.pack()
 	viesti = tkinter.Label(f,text="Valitse haluamasi kysymys tyyppi.",bg=color2)
 	viesti.pack()
-	ekaVika = tkinter.Button(f,text="eka tai vika kirjain",command=eka_vika ,bg=color2)
+	ekaVika = tkinter.Button(f,text="eka tai vika kirjain",command=eka_vika ,bg=color2,width=w)
 	ekaVika.pack()
-	pituus1 = tkinter.Button(f,text="Tietyn pituinen sana",command=pituus,bg=color2)
+	pituus1 = tkinter.Button(f,text="Tietyn pituinen sana",command=pituus,bg=color2,width=w)
 	pituus1.pack()
-	EkaVikaPituus=tkinter.Button(f,text="Tietyn pituinen sana sekä alku- tai loppukirjain",command=eka_vika_pituus,bg=color2)
+	EkaVikaPituus=tkinter.Button(f,text="Tietyn pituinen sana sekä alku- tai loppukirjain",command=eka_vika_pituus,bg=color2,width=w)
 	EkaVikaPituus.pack()
-	Sisaltyy=tkinter.Button(f,text="Sisältää tietyn kirjain yhdistelmän",command=sisaltyy,bg=color2)
+	Sisaltyy=tkinter.Button(f,text="Sisältää tietyn kirjain yhdistelmän",command=sisaltyy,bg=color2,width=w)
 	Sisaltyy.pack()
-	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=sisaltyy_pituiseen,bg=color2)
+	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=Sisaltyy_pituiseen,bg=color2,width=w)
 	Sisaltyy_pituiseen.pack()
-	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2)
+	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2,width=w)
 	tilanne.pack()
 	p = True
 def tarkistus(x,y):
