@@ -27,7 +27,7 @@ def seuraava():
 	EkaVikaPituus.pack()
 	Sisaltyy=tkinter.Button(f,text="Sisältää tietyn kirjain yhdistelmän",command=sisaltyy,bg=color2,width=w)
 	Sisaltyy.pack()
-	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=Sisaltyy_pituiseen,bg=color2,width=w)
+	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=sisaltyy_pituiseen,bg=color2,width=w)
 	Sisaltyy_pituiseen.pack()
 	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2,width=w)
 	tilanne.pack()
