@@ -25,6 +25,8 @@ def seuraava():
 	EkaVikaPituus.pack()
 	Sisaltyy=tkinter.Button(f,text="Sisältää tietyn kirjain yhdistelmän",command=sisaltyy,bg=color2)
 	Sisaltyy.pack()
+	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=sisaltyy_pituiseen,bg=color2)
+	Sisaltyy_pituiseen.pack()
 	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2)
 	tilanne.pack()
 	p = True
@@ -93,6 +95,19 @@ def sisaltyy():
 	syote = tkinter.Entry(f,bg=color2)
 	syote.pack()
 	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k1),f.destroy()],bg=color2)
+	valmis.pack()
+def sisaltyy_pituiseen():
+	f = kehys()
+	f.pack()
+	k1 = ksms.sisaltaa(ksms.yh[random.randint(0,len(ksms.yh))])
+	k2 = ksms.pitka(random.randint(4,30))
+	k3 = []
+	k3.append(list(set(k1[0]).intersection(k2[0])))
+	viesti = tkinter.Label(f,text=k1[1]+"\n"+k2[1],bg=color2)
+	viesti.pack()
+	syote = tkinter.Entry(f,bg=color2)
+	syote.pack()
+	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k3),f.destroy()],bg=color2)
 	valmis.pack()
 def pisteetf():
 	f = kehys()
