@@ -13,7 +13,7 @@ def kehys():
 def pohja():
 	return tkinter.Tk()
 def callback():
-	webbrowser.open_new("https://www.paypal.com/paypalme/Siiha")
+	webbrowser.open_new("https://www.paypal.com/donate/?hosted_button_id=KC5GC9TWEQ3F6")
 def seuraava():
 	f = kehys()
 	f.pack()
@@ -29,7 +29,7 @@ def seuraava():
 	Sisaltyy.pack()
 	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=sisaltyy_pituiseen,bg=color2,width=w)
 	Sisaltyy_pituiseen.pack()
-	tilanne = tkinter.Button(f,text="Pisteeni", command=pisteetf,bg=color2,width=w)
+	tilanne = tkinter.Button(f,text="Piste tilanne", command=pisteetf,bg=color2,width=w)
 	tilanne.pack()
 	p = True
 def tarkistus(x,y):
