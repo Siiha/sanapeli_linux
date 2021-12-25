@@ -6,7 +6,7 @@ sanat = []
 color1 = "#AADFFF"
 color2 = "#AADDFF"
 color3 = "#AAFBFF"
-w = 48
+w = 50
 p = False
 def kehys():
 	return tkinter.Frame(bg=color1)
@@ -29,6 +29,8 @@ def seuraava():
 	Sisaltyy.pack()
 	Sisaltyy_pituiseen = tkinter.Button(f,text="Tietyn pituinen sana joka sisältää tietyn kirjain yhdistelmän",command=sisaltyy_pituiseen,bg=color2,width=w)
 	Sisaltyy_pituiseen.pack()
+	SANOJA = tkinter.Button(f,text="Tietyn määrä sanoja sisältävä sana (myös oikealta vasemmalle)",command=Sanoja,bg=color2,width=w)
+	SANOJA.pack()
 	tilanne = tkinter.Button(f,text="Piste tilanne", command=pisteetf,bg=color2,width=w)
 	tilanne.pack()
 	p = True
@@ -110,6 +112,16 @@ def sisaltyy_pituiseen():
 	syote = tkinter.Entry(f,bg=color2)
 	syote.pack()
 	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k3),f.destroy()],bg=color2)
+	valmis.pack()
+def Sanoja():
+	f=kehys()
+	f.pack()
+	k1 = ksms.sanoja(random.randint(3,20))
+	viesti = tkinter.Label(f,text=k1[1],bg=color2)
+	viesti.pack()
+	syote = tkinter.Entry(f,bg=color2)
+	syote.pack()
+	valmis=tkinter.Button(f,text="valmis",command=lambda:[tarkistus(syote,k1),f.destroy()],bg=color2)
 	valmis.pack()
 def pisteetf():
 	f = kehys()
