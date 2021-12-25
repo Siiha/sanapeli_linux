@@ -8,6 +8,8 @@ Kysyy tietyllä kirjaimella alkavan tai loppuvan sana.
 Yhdistää aiemmat kysymykset.
 ### Sisältää
 Sisältää tietyn kirjainyhdistelmän.
+### Sanoja
+Sana joka sisältää tietyn määrän sanoja (myös oikealta vasemmalle)
 ## Pelaaminen
 ### säännöt 
 Sanan voi käyttää vain kerran pelikerasssa.
