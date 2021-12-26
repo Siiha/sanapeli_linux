@@ -8,6 +8,8 @@ Kysyy tietyllä kirjaimella alkavan tai loppuvan sana.
 Yhdistää aiemmat kysymykset.
 ### Sisältää
 Sisältää tietyn kirjainyhdistelmän.
+### Sisältää ja pituus
+Pituus ja Sisältää kysymyksen yhdistelmä. 
 ### Sanoja
 Sana joka sisältää tietyn määrän sanoja (myös oikealta vasemmalle)
 ## Pelaaminen
