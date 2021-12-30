@@ -1,7 +1,7 @@
 import random,tkinter,sys,os,getpass,spui
 os.chdir('/home/'+getpass.getuser()+'/sanapeli/src')
 base = spui.pohja()
-base.geometry("800x600")
+base.geometry("600x300")
 base.configure(bg=spui.color1)
 base.title("Sanapeli")
 tippi = tkinter.Button(text="Tippi(paypall)",command=spui.callback,bg=spui.color2)
