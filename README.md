@@ -17,5 +17,3 @@ Sana joka sisältää tietyn määrän sanoja (myös oikealta vasemmalle)
 Sanan voi käyttää vain kerran pelikerasssa.
 ## Asennus
 Pura zip pakeketti omaan kotihakemistoosi */home/käyttäjä/*
-## Ajo
-Kirjoita komentoriviin komento *python sanapeli/src/peli.py*
