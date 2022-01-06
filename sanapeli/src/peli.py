@@ -1,5 +1,6 @@
 import random,tkinter,sys,os,getpass,spui
-os.chdir('/home/'+getpass.getuser()+'/sanapeli/src')
+if os.getcwd() != "/home/"+getpass.getuser()+"/sanapeli/src":
+	os.chdir('/home/'+getpass.getuser()+'/sanapeli/src')
 base = spui.pohja()
 base.geometry("600x300")
 base.configure(bg=spui.color1)

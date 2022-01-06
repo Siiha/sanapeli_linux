@@ -1,5 +1,5 @@
-import sqlite3,random,os,sys,itertools
-os.chdir("sanapeli/src")
+import sqlite3,random,os,sys,itertools,getpass
+os.chdir("/home/"+getpass.getuser()+"/sanapeli/src")
 con = sqlite3.connect('data.db')
 
 cur = con.cursor()
