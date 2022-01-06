@@ -16,5 +16,5 @@ Sana joka sisältää tietyn määrän sanoja (myös oikealta vasemmalle)
 ### säännöt 
 Sanan voi käyttää vain kerran pelikerasssa.
 ## Asennus
-Pura zip pakeketti omaan kotihakemistoosi */home/käyttäjä/*./n
+Pura zip pakeketti omaan kotihakemistoosi */home/käyttäjä/*.
 Jos *src* tulee suoraan kotihamistoon luo kansio *sanapeli* ja sijoita se sinne.
