@@ -137,6 +137,14 @@ def tallenna():
 	t.pack()
 	n = tkinter.Entry(f,bg=color2)
 	n.pack()
-	valmis = tkinter.Button(f,text="valmis",command=lambda:[ksms.loppu(n.get(),sum(pisteet))])
+	valmis = tkinter.Button(f,text="valmis",command=lambda:[ksms.loppu(n.get(),sum(pisteet)),f.destroy()])
 	valmis.pack()
 	
+def aiemmat():
+	f = kehys()
+	f.pack()
+	l = [tkinter.Label(f,text=i,bg=color2) for i in ksms.aiemmat()]
+	for i in l:
+		i.pack()
+	nahty=tkinter.Button(f,text="nähty",command=f.destroy,bg=color2)
+	nahty.pack()

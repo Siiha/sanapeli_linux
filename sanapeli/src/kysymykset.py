@@ -30,4 +30,6 @@ yh=["".join(i) for i in itertools.product(k,repeat=2)]+[i*2 for i in k]
 def loppu(n,p):
 	cur.execute("Insert into pelit(pelaaja,pisteet) values(?,?)",(str(n),str(p),))
 	con.commit()
-
+def aiemmat():
+	return [(i[0],i[1]) for i in cur.execute("SELECT * FROM pelit ORDER by pisteet DESC Limit 10")]
+	
