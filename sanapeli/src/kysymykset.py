@@ -1,5 +1,5 @@
-import sqlite3,random,os,sys,itertools,getpass
-os.chdir("/home/"+getpass.getuser()+"/sanapeli/src")
+import sqlite3,random,os,sys,itertools
+os.chdir("sanapeli/src")
 con = sqlite3.connect('data.db')
 
 cur = con.cursor()
@@ -27,3 +27,7 @@ def sanoja(x):
 	return v,s
 k = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, å, ä".replace(", ","")
 yh=["".join(i) for i in itertools.product(k,repeat=2)]+[i*2 for i in k]
+def loppu(n,p):
+	cur.execute("Insert into pelit(pelaaja,pisteet) values(?,?)",(str(n),str(p),))
+	con.commit()
+

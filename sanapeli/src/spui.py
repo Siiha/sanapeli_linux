@@ -130,3 +130,13 @@ def pisteetf():
 	viesti.pack()
 	nahty=tkinter.Button(f,text="nähty",command=f.destroy,bg=color2)
 	nahty.pack()
+def tallenna():
+	f = kehys()
+	f.pack()
+	t = tkinter.Label(f,text="anna nimesi",bg=color2)
+	t.pack()
+	n = tkinter.Entry(f,bg=color2)
+	n.pack()
+	valmis = tkinter.Button(f,text="valmis",command=lambda:[ksms.loppu(n.get(),sum(pisteet))])
+	valmis.pack()
+	
