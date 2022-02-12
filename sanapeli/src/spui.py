@@ -31,8 +31,7 @@ def seuraava():
 	Sisaltyy_pituiseen.pack()
 	SANOJA = tkinter.Button(f,text="Tietyn määrä sanoja sisältävä sana (myös oikealta vasemmalle)",command=lambda:[Sanoja(),f.destroy()],bg=color2,width=w)
 	SANOJA.pack()
-	tilanne = tkinter.Button(f,text="Piste tilanne", command=pisteetf,bg=color2,width=w)
-	tilanne.pack()
+	
 	p = True
 def tarkistus(x,y):
 	f = kehys()
