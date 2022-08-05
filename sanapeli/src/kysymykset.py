@@ -1,5 +1,4 @@
-import sqlite3,random,os,sys,itertools
-os.chdir("sanapeli/src")
+import sqlite3,random,sys,itertools
 con = sqlite3.connect('data.db')
 
 cur = con.cursor()
