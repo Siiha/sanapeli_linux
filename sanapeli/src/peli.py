@@ -6,8 +6,6 @@ base.title("Sanapeli")
 w = 15
 f = tkinter.Frame(bg=spui.color2)
 f.pack(side="left",anchor="n")
-tippi = tkinter.Button(f,text="Tippi(paypall)",command=spui.callback,bg=spui.color2,width=w)
-tippi.pack()
 tilanne = tkinter.Button(f,text="Piste tilanne", command=spui.pisteetf,bg=spui.color2,width=w)
 tilanne.pack()
 aiemmat = tkinter.Button(f,text="aiempien tulokset",command=spui.aiemmat,bg=spui.color2,width=w)
